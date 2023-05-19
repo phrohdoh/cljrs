@@ -1,0 +1,12 @@
+[package]
+name = "cljrs-bevy"
+version = "0.0.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+cljrs-reader       = { path = "../cljrs-reader/" }
+archery            = { workspace = true }
+bevy               = "~0.9" # 0.10 fails to build on macOS (attempts to use Windows' DirectX)
+bevy-tokio-tasks   = "~0.9"
+crossbeam-channel  = "~0.5"

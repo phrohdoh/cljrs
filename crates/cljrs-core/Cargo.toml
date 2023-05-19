@@ -1,0 +1,9 @@
+[package]
+name = "cljrs-core"
+version = "0.0.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+archery = { workspace = true }
+tracing = { workspace = true }

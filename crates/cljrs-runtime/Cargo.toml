@@ -1,0 +1,11 @@
+[package]
+name = "cljrs-runtime"
+version = "0.0.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+cljrs-core = { path = "../cljrs-core" }
+rpds       = { workspace = true }
+archery    = { workspace = true }
+tracing    = { workspace = true }

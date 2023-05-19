@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    # all other CLJRS crates are built atop this one
+    "crates/cljrs-core",
+    #
+    # components of CLJRS
+    "crates/cljrs-reader",
+    "crates/cljrs-runtime",
+    #
+    #
+    # playgrounds
+    "crates/cljrs-toy",
+    "crates/cljrs-bevy",
+]
+
+[workspace.dependencies]
+rpds    = "~0.13"
+archery = "~0.5"
+tracing = "~0.1"
+tracing-subscriber = { version = "^0.3", features = ["env-filter"] }

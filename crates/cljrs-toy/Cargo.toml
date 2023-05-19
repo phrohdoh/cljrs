@@ -1,0 +1,11 @@
+[package]
+name = "cljrs-toy"
+version = "0.0.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+cljrs-reader       = { path = "../cljrs-reader/" }
+archery            = { workspace = true }
+tracing            = { workspace = true }
+tracing-subscriber = { workspace = true }
